@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Néstor Carrasquero</title>
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>  
+
+  <nav>
+    <h1>Néstor Carrasquero</h1>
+    <ul>
+      <li><a href="#about">Sobre Mi</a></li>
+      <li><a href="#skills">Habilidades</a></li>
+      <li><a href="#projects">Proyectos</a></li>
+      <li><a href="#contact">Contacto</a></li>
+    </ul>
+  </nav>
+
+  <section class="hero" id="about">
+    <img src="assets/images/IMG_20221208_145049.jpg" 
+    alt="nestor"
+    loading="lazy"
+    class="hero-img" />
+    <div class="bio animate__animated animate__shakeX">
+      <h2 class="bio-title">Sobre Mi</h2>
+      <p class="bio-text">
+        Soy un profesional en el área de las Tecnologías de Información,
+        con experiencia de más de quince años en diversas actividades,
+        que van desde el análisis de sistemas, pasando por la programación
+        y mantenimiento de Aplicaciones Web
+      </p>
+    </div>
+  </section>
+
+  <section class="more-about">
+    <h2>Más sobre mi</h2>
+    <p>
+      He trabajado en diversos proyectos que van desde la programación de aplicaciones Web
+      en Ruby on Rails y ReactJS, migración de plataformas, pasando por la creación y 
+      mantenimiento de Bases de Datos con Postgresql y DB2, hasta el Backend con Spring Boot
+    </p>
+    <p>
+      De igual forma, he trabajado con ETL en Pentaho y funcionalidades aplicadas a BD
+      en Python, rutinas de actualizaciones de registros y reportes
+    </p>
+  </section>
+
+  <section class="skills" id="skills">
+    <h2 class="header-skills">Mis mejores habilidades</h2>
+    <div class="container-skills">
+      <div class="first-set animate__animated animate__pulse">
+        <img src="assets/icons/rails-svgrepo-com.svg" alt="" loading="lazy" class="icon icon-card" />
+        <img src="assets/icons/postgresql-logo-svgrepo-com.svg" alt="" loading="lazy" class="icon icon-card" />
+        <img src="assets/icons/reactjs-svgrepo-com.svg" alt="" loading="lazy" class="icon icon-card" />
+      </div>
+      <div class="second-set animate__animated animate__pulse">
+        <img src="assets/icons/spring-svgrepo-com.svg" alt="" loading="lazy" class="icon icon-card" />
+        <img src="assets/icons/javascript-svgrepo-com.svg" alt="" loading="lazy" class="icon icon-card" />
+      </div>
+    </div>
+  </section>
+
+  <section class="projects" id="projects">
+    <h2 class="project-title">Algunos de mis proyectos recientes</h2>
+    <div class="container-projects">
+      <div class="project-card">
+        <img src="assets/images/Screenshot_20230105_085128.png" alt="" class="project-pic" loading="lazy" />
+        <h3 class="project-title">
+          Sistema de Indicadores
+        </h3>
+        <p class="project-details">
+          Sistema interamericano de informacion regional sobre violencia contra las mujeres.         
+        </p>
+        <p class="project-details">
+          Es una aplicación que permite registrar indicadores sobre violencia de género
+        </p>
+      </div>      
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <h2>Contáctame</h2>
+    <div class="contact-form-container">
+      <div class="contact-form">
+        <form action="https://formspree.io/f/mayzydkl" method="POST">
+          <div>
+            <label for="name">Nombre</label>
+            <input 
+              type="text" 
+              id="name"
+              name="sender-name"
+              placeholder="Escriba su nombre"
+              class="input-field"
+              required
+            />
+          </div>
+          <div>
+            <label for="email">Correo Electrónico</label>
+            <input 
+              type="text" 
+              id="email"
+              name="sender-email"
+              placeholder="Escriba su correo electrónico"
+              class="input-field"
+              required
+            />
+          </div>
+          <div>
+            <label for="mensaje">Mensaje</label>
+            <textarea 
+              name="mensaje" 
+              id="mensaje" 
+              cols="30" 
+              rows="10"
+              placeholder="Escriba su mensaje"
+              class="input-field"
+              required>
+            </textarea>
+          </div>          
+          <input 
+            type="submit"
+            value="Enviar"
+            id="submit-btn"
+            class="submit-btn"
+          />         
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <div class="sociales">
+    <a href="#" target="_blank">
+      <img 
+        src="assets/icons/icons8-linkedin-rodeado-de-círculo-24.png" 
+        alt="Linkedin"
+        loading="lazy"
+        class="socicon" />
+    </a>
+    <a href="#" target="_blank">
+      <img 
+        src="assets/icons/icons8-github-24.png" 
+        alt="Github"
+        loading="lazy"
+        class="socicon" />
+    </a>
+  </div>
+
+  <footer>
+    <p class="copy">&copy; Copyright 2023</p>
+    <p class="copy">
+      Built with &#x2661; by
+      <a href="https://twitter.com/nestor2105" target="_blank">
+        Néstor Carrasquero
+      </a>
+    </p>
+  </footer>
+
+  <i class="scroll-up" id="scroll-up">
+    <img 
+      src="assets/icons/icons8-arriba-en-círculo-2-24.png" 
+      alt="desplazarse-hacia-arriba" 
+      class="socicon up-arrow" />
+  </i>
+
+  <script src="assets/js/main.js"></script>
+
+</body>
+</html>
