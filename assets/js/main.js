@@ -1,4 +1,8 @@
 const desplazarArriba = document.querySelector("#scroll-up");
+const burger = document.querySelector("#burger-menu");
+const ul = document.querySelector("nav ul");
+const nav = document.querySelector("nav");
+const navLink = document.querySelectorAll(".nav-link");
 
 desplazarArriba.addEventListener("click", () => {
   window.scrollTo({
@@ -7,3 +11,13 @@ desplazarArriba.addEventListener("click", () => {
     behavior: "smooth",
   });
 });
+
+burger.addEventListener("click", () => {
+  ul.classList.toggle("show");
+});
+
+navLink.forEach((link) =>
+  link.addEventListener("click", () => {
+    ul.classList.remove("show");
+  })
+);
